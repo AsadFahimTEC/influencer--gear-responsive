@@ -1,0 +1,15 @@
+/*poppins google fonts add */
+/* shared styles */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
