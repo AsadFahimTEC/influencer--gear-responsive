@@ -103,10 +103,15 @@ main {
   padding: 0 140px;
 }
 
+.sponsor{
+    display: grid;
+}
+
 .sponsor-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
   margin-top: 280px;
   gap: 24px;
 }
@@ -171,6 +176,45 @@ margin-bottom: 20px;
   gap: 40px;
 }
 
+.see-more{
+display: block;
+color: rgba(224, 44, 109, 0.87);
+font-size: 1rem;
+font-weight: 700;
+text-align: right;
+
+margin-right: -12px;
+margin-top: 50px;
+}
+
+/*featured section styles */
+
+.feature-area{
+    background: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin: 100px 0;
+}
+
+.feature-content{
+    width: 50%;
+}
+
+.feature-title{
+    color: #0A0826;
+    font-size: 2.37rem;
+    font-weight: 700;
+}
+
+.feature-description{
+color: #6C6C6C;
+font-family: Poppins;
+font-size: 1rem;
+margin: 10px 0;
+}
+
 /* responsive styles */
 /* small devices */
 
@@ -180,8 +224,7 @@ margin-bottom: 20px;
   }
 
   nav,
-  .banner-img,
-  .sponsor-image {
+  .banner-img, .sponsor-image, .feature-content {
     flex-direction: column;
     margin: auto 0px;
   }
@@ -195,8 +238,19 @@ margin-bottom: 20px;
     font-size: 1rem;
   }
 
-  .banner-img,
-  .sponsor-image {
+  .feature-area {
+    flex-direction: column-reverse;
+  }
+
+  .feature-title{
+    font-size: 1.01rem;
+  }
+
+  .feature-description{
+    font-size: 0.55rem;
+  }
+
+  .banner-img, .sponsor-image {
     width: 100%;
   }
 }
@@ -209,10 +263,22 @@ margin-bottom: 20px;
   }
 
   nav,
-  .banner-img,
-  .sponsor-image {
+  .banner-img, .sponsor-image, .feature-content{
     flex-direction: column;
     margin: auto;
+  }
+
+  .feature-area {
+    flex-direction: column-reverse;
+  }
+
+  .feature-description{
+    font-size: 0.55rem;
+  }
+
+  
+  .feature-title{
+    font-size: 1.01rem;
   }
 
   .popular h3{
@@ -220,13 +286,12 @@ margin-bottom: 20px;
   }
 
   
-  .cards-container {
+  .cards-container, .sponsor-image{
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
   }
 
-  .banner-img,
-  .sponsor-image {
+  .banner-img{
     width: 100%;
   }
 }
