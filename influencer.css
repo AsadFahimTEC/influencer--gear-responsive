@@ -221,6 +221,47 @@ font-size: 1rem;
 margin: 10px 0;
 }
 
+/* footer styles */
+.footer{
+  width: 100%;
+  background-color: #0A0826;
+  text-align: center;
+  padding: 50px 0;
+  color: #fff;
+}
+
+.footer h3{
+  color: #FFF;
+font-size: 1.5rem;
+font-weight: 700;
+}
+
+.footer small{
+  color: #D9DBE1;
+font-family: Manrope;
+font-size: 0.88rem;
+font-weight: 700;
+display: inline-block;
+padding: 10px 0;
+}
+
+.footer ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer li{
+  list-style: none;
+  padding: 10px 15px;
+}
+
+.footer li a{
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.25rem;
+}
+
 /* responsive styles */
 /* small devices */
 
