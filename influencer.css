@@ -50,10 +50,14 @@ nav li a {
 
 /* container and banner styles */
 
+.container{
+    background-color: #FFF;
+    max-width: 700px;
+}
+
 .content {
   text-align: left;
-  max-width: 700px;
-  margin: 40px 0;
+  margin: 50px 0;
 }
 
 .content-title {
@@ -83,15 +87,26 @@ nav li a {
 
 .banner-img{
     display: flex;
-    width: 40%;
+    width: 50%;
     margin:  -300px 700px;
-    background-image: url("./images/Circle\ design.svg");
+    background-image: url('./images/Circle\ design.svg');
+    background-size: contain;
     background-repeat: no-repeat;
+ 
 }
 
 .banner-img img{
     width: 100%;
 }
+
+.sponsor-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 280px;
+    gap: 24px;
+}
+
 
 
 
@@ -103,12 +118,12 @@ nav li a {
     padding: 20px;
   }
 
-  nav, .banner-img {
+  nav, .banner-img, .sponsor-image{
     flex-direction: column;
     margin: auto 0px;
   }
-
- .banner-img{
+  
+ .banner-img, .sponsor-image{
     width: 100%;
   }
 }
@@ -120,12 +135,12 @@ nav li a {
     padding: 50px;
   }
 
-  nav, .banner-img {
+  nav, .banner-img, .sponsor-image{
     flex-direction: column;
     margin: auto 0px;
   }
 
-  .banner-img{
+  .banner-img, .sponsor-image{
     width: 100%;
   }
 
