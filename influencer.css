@@ -107,15 +107,15 @@ main {
   margin: 100px 0px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   padding: 50px 0px;
-  gap: 30px;
+  gap: 70px;
   box-shadow: 0 0 1px #3a3a3a;
   flex-wrap: wrap;
 }
 
 .sponsor-image {
-  width: 100px;
+  width: 55px;
   text-align: center;
 }
 
@@ -295,11 +295,14 @@ main {
   }
 
   .sponsor-image {
-    width: 55px;
+    width: 100%;
   }
 
   .sponsor {
-    margin: 50px 0;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    justify-content: start;
   }
 
   .feature-content {
@@ -328,8 +331,7 @@ main {
     font-size: 0.55rem;
   }
 
-  .banner-img,
-  .sponsor-image {
+  .banner-img{
     width: 100%;
   }
 }
@@ -383,7 +385,9 @@ main {
     gap: 40px;
   }
 
-  .banner-img {
+  
+
+  .banner-img{
     width: 100%;
   }
 }
